@@ -23,3 +23,19 @@ const sumAllRest = (num1, num2, num3, ...rest) => {
 
 let sum = sumAllRest(1, 2, 3, 4, 5, 6);
 console.log(sum);
+
+
+let mixedLetters = ['b', 'd', 'a', 'c', 'f', 'e'];
+let moreMixedLetters = [...mixedLetters, 'h', 'k', 'g', 'j', 'i', 'l']
+
+console.log(moreMixedLetters);
+
+const updateSortReverse = (arr, ...letters) => {
+    let allArgs = [...arr, ...letters].sort().reverse();
+    return allArgs;
+}
+
+let reverseSort = updateSortReverse(moreMixedLetters, 'n', 'm', 'o');
+
+console.log(reverseSort);
+console.log(mixedLetters);
